@@ -38,9 +38,9 @@
 	[button setNormalBg:normalButton];
 	[button setHighlightedBg:highlightedButton];
 	[button setAdjustsImageWhenHighlighted:NO];
-	[button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+	[button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 	[[button titleLabel] setFont:[UIFont fontWithName:@"Helvetica-Bold" size:14]];
-	[button setTitleShadowColor:[UIColor whiteColor] forState:UIControlStateNormal];
+	[button setTitleShadowColor:[UIColor blackColor] forState:UIControlStateNormal];
 	[[button titleLabel] setShadowOffset:CGSizeMake(0.0, 0.5)];
 	[[button titleLabel] setLineBreakMode:UILineBreakModeTailTruncation];
 	[button setTitleEdgeInsets:UIEdgeInsetsMake(0, 10, 0, 10)];
@@ -65,12 +65,12 @@
 	if (_toggled)
 	{
 		[self setBackgroundImage:self.highlightedBg forState:UIControlStateNormal];
-		[self setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+		[self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 	}
 	else
 	{
 		[self setBackgroundImage:self.normalBg forState:UIControlStateNormal];
-		[self setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+		[self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 	}
 }
 
